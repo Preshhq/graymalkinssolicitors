@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="discription" content=" Gray Malkin Solicitors ">
+    <meta name="keywords" content="law,law firm, solicitor, justice,professional lawyers, professional law firms, court case">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Gray Malkin solicitors</title>
+    
+</head>
+<body onload="slider()">  
+
+    <header>
+        <div>
+        <img src="./images/gray malkin logo.png" class="logo">
+        </div>
+        <nav>
+            <ul class="nav_menu">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Expertise.html">Expertise</a></li>
+            
+            </ul>
+        </nav>
+        <a href="cont_but"><button>Contact Us</button></a>
+    </header>
+    <div class="banner">
+        <div class="slider">
+            <img src="./images/Home1.png" id="sliderimage">
+            
+        </div>
+        <div class="overlay">
+            <div class="content">
+                <h1>SOMETHING NICE ABOUT THE FIRM</h1>
+                <h3>Like a value or something you do</h3>
+            </div>
+        </div>
+        
+    
+
+    </div>
+    <script>
+        var sliderimage = document.getElementById("sliderimage");
+        var images = new Array (
+            "./images/Home1.png",
+            "./images/Home2.png",
+            "./images/Home3.png"
+        );
+
+        var len = images.length;
+        var i = 0;
+        function slider(){
+            if (i > len-1){
+                i = 0
+            }
+            sliderimage.src = images[i];
+            i++;
+            setTimeout('slider()',5000);
+        }
+
+    </script>
+   <section class="afterbanner">
+        <h2> Another one </h2>
+        <p> Food and Agriculture Organization of the United Nations: Home
+            FAOHome › home
+            Thumbnail image
+            World Food Day 2022. There are some eight billion people on this planet, and we share one food system. Conflict, disease, inequality, climate change and rising ...
+            food | Definition & Nutrition | Britannica
+            Encyclopedia Britannica › Entertainment & Pop Culture › Food
+            Thumbnail image
+            food, substance consisting essentially of protein, carbohydrate, fat, and other nutrients used in the body of an organism to sustain growth and vital ...
+            FOOD | meaning, definition in Cambridge English Dictionary
+            dictionary.cambridge.org › dictionary › english › food
+            Thumbnail image
+            food definition: 1. something that people and animals eat, or plants absorb, to keep them alive: 2. something that…. Learn more.
+            UN World Food Programme (WFP)
+            www.wfp.org
+            Thumbnail image
+            We are the world's largest humanitarian organization, saving lives in e 
+        </p>
+   </section>
+   <footer>
+    Gray Malkin Solicitors, Copyright &copy; 2022
+   </footer>
+</body>
+</html>
